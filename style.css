@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(
+    225deg,
+    #f4f46e 50%,
+    rgb(71, 16, 1) 10%,
+    #5b34e6 95%
+  );
+}
+
+.container {
+  background: #fff;
+  width: 85vmin;
+  border-radius: 3vmin;
+  padding: 5vmin 6vmin;
+  box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.5);
+}
+.container header {
+  font-size: 4vmin;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 3vmin;
+}
+form {
+  margin: 0 4vmin;
+  text-align: center;
+  position: relative;
+}
+
+form .confirm-msg {
+  padding: 2.5vmin 0;
+  background-color: #fecbcb;
+  color: #cb0606;
+  border-radius: 2vmin;
+  margin-bottom: 4vmin;
+  font-size: 3vmin;
+  display: none;
+}
+form .input-field {
+  width: 100%;
+  height: 10vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vmin;
+}
+.input-field input {
+  width: 100%;
+  height: 100%;
+  padding-left: 4vmin;
+  font-size: 3.5vmin;
+  border: 0.2vmin solid lightgray;
+  border-radius: 2vmin;
+  outline: none;
+  transition: all 0.3s;
+}
+
+form .input-field input:focus {
+  border-color: #7553f1;
+  box-shadow: inset 0 0 0.5vmin #782fd0;
+}
+.input-field .show {
+  position: absolute;
+  right: 5%;
+  top: 45%;
+  transform: translateY(-50%);
+  font-size: 3vmin;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  display: none;
+  transition: all 0.1s ease-in;
+}
+.show:active {
+
+  font-size:2.85vmin ;
+}
+form button {
+  margin: 5vmin 0 3vmin 0;
+  width: 100%;
+  height: 10vmin;
+  font-size: 4vmin;
+  border: none;
+  border-radius: 2vmin;
+  background-color: #7553f1;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in;
+  cursor: no-drop;
+  opacity: 0.7;
+  letter-spacing: 2vmin;
+}
+form button:hover {
+  background-color: #5f44c2;
+}
